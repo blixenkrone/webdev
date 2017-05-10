@@ -1,0 +1,27 @@
+*{
+  font-family: arial;
+}
+
+body{
+  background-color: pink;
+  font-style: normal;
+
+}
+
+h2{
+  color: green;
+}
+
+.redditTag{
+  background-color: yellow;
+}
+
+.tableClass{
+  padding: 10px;
+  background-color: green;
+}
+
+.postClass{
+  color: BLUE;
+  font-size: 20;
+}
