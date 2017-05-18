@@ -5,7 +5,7 @@
 <head>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <script language="javascript" type="text/javascript" </script> <!-- src="" -->
 
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
@@ -21,24 +21,39 @@
   <h2>Sådan altså</h2>
 
   <p class="redditTag">
-    <a href="http://www.reddit.com">Reddit!</a>
+    <a class="btn btn-primary btn-md active" href="http://www.reddit.com">Reddit!</a>
     <h6>Gul tekst pls</h6>
   </p>
 
   <h3>Se en liste!:</h3>
 
-  <table class="tableClass" border="1">
-    <tr>
-      <td>Image</td>
-      <td>Name</td>
-      <td>Type</td>
-    </tr>
-    <tr>
-      <td>Se nu her</td>
-      <td>Se her også</td>
-      <td>INtet her</td>
-    </tr>
-  </table>
+<div class="container">
+  <form class="inline" action="index.html" method="post">
+    <div class="jumbotron">
+
+      <table class="tableClass" border="1">
+        <p>
+          <tr>
+            <td>Image</td>
+            <td>Name</td>
+            <td>Type</td>
+          </tr>
+
+        </p>
+          <tr>
+            <td>Se nu her</td>
+            <td>Se her også</td>
+            <td>INtet her</td>
+          </tr>
+      </table>
+    </div>
+  </form>
+</div>
+
+
+
+
+
 
 
 
@@ -61,7 +76,7 @@
     <option value="eggs">Eggs</option>
   </select>
 
-    <input type="submit" name="submit" value="Submit">
+    <input class="btn btn-success btn-xs"type="submit" name="submit" value="Submit">
 </form>
 
 
