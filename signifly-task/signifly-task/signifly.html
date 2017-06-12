@@ -5,8 +5,11 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="signifly.css">
     <title>Signifly</title>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <script src="signifly.js"></script>
+    <script src="https://use.fontawesome.com/d0ccf556d4.js"></script>
+
     <script>
       // Initialize Firebase
       var config = {
@@ -19,130 +22,124 @@
       };
       firebase.initializeApp(config);
     </script>
-    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="signifly.js"></script>
+
   </head>
 
 
   <body>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a href="#" class="navbar-brand" color="#df1927">Signifly</a>
-            </div>
-              <ul class="nav navbar-nav">
-                <li><a href="bootstrap.html"> Home </a></li>
-                <li><a href="bootstrap.html"> About </a></li>
-                <li><a href="bootstrap.html"> Contact </a></li>
-                <li><a href="bootstrap.html"> Collaboration </a></li>
-              </ul>
-
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <a href="#" class="navbar-brand"><i class="fa fa-bug" aria-hidden="true"></i>Signifly</a>
+              </div>
                 <ul class="nav navbar-nav">
-                  <li><a href="#">A link </a></li>
-                  <li><a href="#">Another link</a></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">One more separated link</a></li>
-                    </ul>
-                  </li>
+
+                  <!-- MENU -->
+                  <li><a href="bootstrap.html"> Home </a></li>
+                  <li><a href="bootstrap.html"> About </a></li>
+                  <li><a href="bootstrap.html"> Contact </a></li>
+                  <li><a href="bootstrap.html"> Collaboration </a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Sign-up</a></li>
-                  <li><a href="#">Login</a></li>
-                </ul>
-              </div><!-- /.navbar-collapse -->
 
-
-
-            </div>
-        </nav>
-      </div>
-
-
-      <!-- Selve collagen kommer her -->
-      <div class="container">
-          <div class="jumbotron">
-            <div id="jumbotron-header">
-              <h1>Collaboration</h1>
-              <p> Teams assorted </p>
-            </div>
-
-          </div>
-
-
-          <div class="row">
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">A link </a></li>
+                    <li><a href="#">Another link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Sign-up</a></li>
+                    <li><a href="#">Login</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
               </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+          </nav>
+        </div>
+
+
+        <!-- Selve collagen kommer her -->
+        <div class="container">
+            <div class="jumbotron">
+              <div id="jumbotron-header">
+                <h1>Collaboration</h1>
+                <p> Teams assorted </p>
               </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <div class="thumbnail">
-                <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
-              </div>
+
             </div>
 
 
-      </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                  <img src="http://i.imgur.com/qK42fUu.jpg" alt="...">
+                </div>
+              </div>
 
 
-
-
+        </div>
 
 
   </body>
