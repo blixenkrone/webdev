@@ -1,0 +1,16 @@
+body{
+  padding-top: 70px;
+}
+
+.jumbotron {
+  background: BLACK;
+  opacity: 0.6;
+}
+
+#jumbotron-header{
+  color: WHITE;
+}
+
+.navbar-brand {
+  font-size: 20px;
+}
