@@ -1,16 +1,12 @@
 body{
   padding-top: 70px;
-}
-
-.jumbotron {
-  background: BLACK;
-  opacity: 0.6;
+  font-family: gotham-light;
 }
 
 #jumbotron-header{
-  color: WHITE;
+  color: #df1927;
 }
 
-.navbar-brand {
-  font-size: 20px;
+.navbar{
+  background-color: #1e2228;
 }

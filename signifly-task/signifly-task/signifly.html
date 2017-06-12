@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Signifly</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="signifly.css">
-    <title>Signifly</title>
+    <!-- JQUERY LOAD FØR ALT ANDET-->
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <!-- SIGNIFLY JS LOAD -->
     <script src="signifly.js"></script>
+    <!-- FIREBASE LOAD -->
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <!-- JQUERY LOAD -->
     <script src="https://use.fontawesome.com/d0ccf556d4.js"></script>
 
     <script>
-      // Initialize Firebase
+      // START FIREBASE OBJEKT
       var config = {
         apiKey: "AIzaSyD3lvF6MG61g1kkv4Gvd83kJwsqNAJnRyQ",
         authDomain: "test-9b3bb.firebaseapp.com",
@@ -25,51 +29,53 @@
 
   </head>
 
-
   <body>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
               <div class="navbar-header">
-                <a href="#" class="navbar-brand"><i class="fa fa-bug" aria-hidden="true"></i>Signifly</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!-- <a href="#" class="navbar-brand"> Signifly</a> -->
               </div>
                 <ul class="nav navbar-nav">
-
                   <!-- MENU -->
-                  <li><a href="bootstrap.html"> Home </a></li>
-                  <li><a href="bootstrap.html"> About </a></li>
-                  <li><a href="bootstrap.html"> Contact </a></li>
-                  <li><a href="bootstrap.html"> Collaboration </a></li>
+                  <li><a href="signifly.html"><i class="fa fa-home" aria-hidden="true"></i> home </a></li>
+                  <li><a href="bootstrap.html"><i class="fa fa-info" aria-hidden="true"></i> about </a></li>
+                  <li><a href="bootstrap.html"><i class="fa fa-vcard" aria-hidden="true"></i> contact </a></li>
                 </ul>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="#">A link </a></li>
-                    <li><a href="#">Another link</a></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <!-- Home dropdown -->
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users" aria-hidden="true"></i> teams <span class="caret"></span></a>
+                      <!-- Home dropdown -->
                       <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Team name 1</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">Team name 2</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li><a href="#">Team name 3</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Team name 4</a></li>
                       </ul>
                     </li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sign-up</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> sign-up</a></li>
+                    <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> login</a></li>
                   </ul>
-                </div><!-- /.navbar-collapse -->
-              </div>
-          </nav>
-        </div>
-
-
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+          </div>
+        </div> <!-- NAV-BAR COLLAPSE CLASSEN COLLAPSE -->
         <!-- Selve collagen kommer her -->
         <div class="container">
             <div class="jumbotron">
