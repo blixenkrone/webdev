@@ -1,14 +1,32 @@
 body{
   padding-top: 70px;
   font-family: gotham-light !important;
-  font-size: 150%;
+  background-color: #1e2228;
 }
 
-#jumbotron-header{
-  color: #df1927;
+.btn{
+  background-color: #1e2228 !important;
+  padding-top: 10px;
+}
+
+/*TIL FARVEN*/
+.jumbotron{
+  background: #df1927;
+}
+
+/*TIL ALT ANDET*/
+.jumbotron h1 {
+  color: #1e2228;
+  font-size: 60px;;
 }
 
 .navbar{
   background-color: #1e2228;
-  padding-top: 5px;
+  padding-top: 10px;
+}
+
+.navbar-inverse .navbar-brand{
+  line-height: 27px;
+  color: #df1927;
+  font-size: 150%;
 }
