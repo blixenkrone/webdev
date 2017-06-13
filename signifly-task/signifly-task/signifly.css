@@ -4,20 +4,26 @@ body{
   background-color: #1e2228;
 }
 
-.btn{
-  background-color: #1e2228 !important;
-  padding-top: 10px;
+.btn-primary{
+  background-color: #df1927 !important;
+  border-color: #1e2228;
+  padding-top: 20px;
 }
 
 /*TIL FARVEN*/
 .jumbotron{
-  background: #df1927;
+  background: #252a33;
 }
 
 /*TIL ALT ANDET*/
 .jumbotron h1 {
-  color: #1e2228;
+  color: #ffffff;
   font-size: 60px;;
+}
+
+.jumbotron p{
+  font-size: 16px;
+  color: #ffffff;
 }
 
 .navbar{
