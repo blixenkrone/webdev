@@ -10,6 +10,22 @@ body{
   padding-top: 20px;
 }
 
+/*CAROUSEL*/
+
+.carousel-inner{
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+
+.carousel-indicators{
+  color: black;
+  position: absolute;
+  left: 0%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 .btn{
   color: #ffff;
   background-color: #df1927 !important;
@@ -20,12 +36,13 @@ body{
 /*TIL FARVEN*/
 .jumbotron{
   background: #252a33;
+  padding: 10px;
 }
 
 /*TIL ALT ANDET*/
 .jumbotron h1 {
   color: #ffffff;
-  font-size: 60px;;
+  font-size: 40px;;
 }
 
 .jumbotron p{
@@ -42,4 +59,9 @@ body{
   line-height: 27px;
   color: #df1927;
   font-size: 150%;
+}
+
+#jumbotron-footer{
+  padding: 10px;
+  font-size: 10px;
 }

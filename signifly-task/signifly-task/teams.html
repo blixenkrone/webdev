@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Signifly Teams</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="signifly.css">
+  <!-- JQUERY LOAD FØR ALT ANDET-->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <!-- SIGNIFLY JS LOAD -->
+  <script src="signifly.js"></script>
+  <!-- Contacts Store JavaScript -->
+  <script src="script.js"></script>
+  <!-- FIREBASE LOAD -->
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+  <!-- JQUERY LOAD -->
+  <script src="https://use.fontawesome.com/d0ccf556d4.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include Firebase Library -->
+  <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+
+
+  <script>
+    // START FIREBASE OBJEKT
+    var config = {
+      apiKey: "AIzaSyD3lvF6MG61g1kkv4Gvd83kJwsqNAJnRyQ",
+      authDomain: "test-9b3bb.firebaseapp.com",
+      databaseURL: "https://test-9b3bb.firebaseio.com",
+      projectId: "test-9b3bb",
+      storageBucket: "test-9b3bb.appspot.com",
+      messagingSenderId: "238640825301"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <style type="text/css">
+    #contacts p,
+    #contacts p.lead{
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+    <!-- RESPONSIVE -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="signifly.html">Signifly</a>
+      </div>
+      <!-- /.navbar-collapse -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="signifly.html"><i class="fa fa-home" aria-hidden="true"></i> home </a></li>
+          <li><a href="signifly.html"><i class="fa fa-info" aria-hidden="true"></i> about </a></li>
+          <li><a href="signifly.html#footer"><i class="fa fa-vcard" aria-hidden="true"></i> contact </a></li>
+          <li class="dropdown">
+          <!-- Home dropdown -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users" aria-hidden="true"></i> teams <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="teams.html">Team name 1</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Team name 2</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Team name 3</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Team name 4</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> sign-up</a></li>
+          <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> login</a></li>
+        </ul>
+      </div>
+  </div>
+  </nav>
+
+<div class="container-fluid">
+ <div class="jumbotron">
+   <div class="container">
+     <div id="jumbotron-header">
+
+       <h1>Collaboration</h1>
+       <p>
+         Four dollar toast hexagon next level bespoke. La croix intelligentsia literally flannel kitsch. Tousled fingerstache intelligentsia poke seitan. Venmo deep v beard, tilde mixtape banjo farm-to-table marfa viral. Taxidermy biodiesel roof party chillwave, kickstarter occupy polaroid readymade. Keffiyeh seitan shaman, prism YOLO ethical drinking vinegar tbh vape enamel pin narwhal chia street art. Shabby chic meggings af pitchfork, freegan four loko DIY distillery skateboard squid fingerstache fanny pack.
+       </p>
+         <p><a class="btn btn-primary btn-lg" href="teams.html" role="button" id="jumbotron-btn">Create team</a></p>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://image.shutterstock.com/z/stock-photo-handsome-businessman-in-eyeglasses-is-using-a-computer-looking-at-camera-and-smiling-while-working-523944493.jpg" alt="...">
+            <div class="caption">
+              <h3>Anders andersen</h3>
+              <p>Analyst, big data, marketing</p>
+              <p>aa@signifly.com</p>
+              <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://image.shutterstock.com/z/stock-photo-handsome-businessman-in-eyeglasses-is-using-a-computer-looking-at-camera-and-smiling-while-working-523944493.jpg" alt="...">
+            <div class="caption">
+              <h3>Anders andersen</h3>
+              <p>Analyst, big data, marketing</p>
+              <p>aa@signifly.com</p>
+              <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://image.shutterstock.com/z/stock-photo-handsome-businessman-in-eyeglasses-is-using-a-computer-looking-at-camera-and-smiling-while-working-523944493.jpg" alt="...">
+            <div class="caption">
+              <h3>Anders andersen</h3>
+              <p>Analyst, big data, marketing</p>
+              <p>aa@signifly.com</p>
+              <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://image.shutterstock.com/z/stock-photo-handsome-businessman-in-eyeglasses-is-using-a-computer-looking-at-camera-and-smiling-while-working-523944493.jpg" alt="...">
+            <div class="caption">
+              <h3>Anders andersen</h3>
+              <p>Analyst, big data, marketing</p>
+              <p>aa@signifly.com</p>
+              <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://image.shutterstock.com/z/stock-photo-handsome-businessman-in-eyeglasses-is-using-a-computer-looking-at-camera-and-smiling-while-working-523944493.jpg" alt="...">
+            <div class="caption">
+              <h3>Anders andersen</h3>
+              <p>Analyst, big data, marketing</p>
+              <p>aa@signifly.com</p>
+              <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://image.shutterstock.com/z/stock-photo-handsome-businessman-in-eyeglasses-is-using-a-computer-looking-at-camera-and-smiling-while-working-523944493.jpg" alt="...">
+            <div class="caption">
+              <h3>Anders andersen</h3>
+              <p>Analyst, big data, marketing</p>
+              <p>aa@signifly.com</p>
+              <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://image.shutterstock.com/z/stock-photo-handsome-businessman-in-eyeglasses-is-using-a-computer-looking-at-camera-and-smiling-while-working-523944493.jpg" alt="...">
+            <div class="caption">
+              <h3>Anders andersen</h3>
+              <p>Analyst, big data, marketing</p>
+              <p>aa@signifly.com</p>
+              <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://image.shutterstock.com/z/stock-photo-handsome-businessman-in-eyeglasses-is-using-a-computer-looking-at-camera-and-smiling-while-working-523944493.jpg" alt="...">
+            <div class="caption">
+              <h3>Anders andersen</h3>
+              <p>Analyst, big data, marketing</p>
+              <p>aa@signifly.com</p>
+              <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img src="https://image.shutterstock.com/z/stock-photo-handsome-businessman-in-eyeglasses-is-using-a-computer-looking-at-camera-and-smiling-while-working-523944493.jpg" alt="...">
+            <div class="caption">
+              <h3>Anders andersen</h3>
+              <p>Analyst, big data, marketing</p>
+              <p>aa@signifly.com</p>
+              <p><a href="#" class="btn btn-primary" role="button">Add</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- SLUT PÅ ADD CLIENT CONTENT -->
+
+
+
+
+
+
+  <div class="container">
+    <h1>Contact Store Application</h1>
+    <hr/>
+    <div class="row">
+      <div class="col-md-6">
+        <form method="post" name="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required placeholder="Enter Email">
+          </div>
+          <h3>Location</h3>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" placeholder="Enter City">
+          </div>
+          <div class="form-group">
+            <label for="email">State</label>
+            <input type="text" class="form-control" id="state" placeholder="Enter State">
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="Enter Zip Code">
+          </div>
+          <button type="submit" class="btn btn-primary addValue">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <ul id="contacts" class="list-group">
+          <!-- Conatct Object li.list-group-item.contact will be added here by js -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
