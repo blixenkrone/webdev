@@ -4,10 +4,17 @@ body{
   background-color: #1e2228;
 }
 
-.btn-primary{
+#jumbotron-btn{
   background-color: #df1927 !important;
   border-color: #1e2228;
   padding-top: 20px;
+}
+
+.btn{
+  color: #ffff;
+  background-color: #df1927 !important;
+  border-color: #1e2228;
+  padding-top: 15px;
 }
 
 /*TIL FARVEN*/
