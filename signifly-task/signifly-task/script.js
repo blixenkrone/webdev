@@ -1,5 +1,5 @@
 //create firebase reference
-var dbRef = new Firebase("https://test-9b3bb.firebaseio.com/");
+var dbRef = new Firebase("https://contactb.firebaseio.com/");
 var contactsRef = dbRef.child('contacts')
 
 //load older conatcts as well as any newly added one...
@@ -24,20 +24,6 @@ document.querySelector('.addValue').addEventListener("click", function( event ) 
       })
       contactForm.reset();
   } else {
-    alert('Please fill atlease name or email!');
+    alert('Please fill at lease name or email!');
   }
 }, false);
-
-//prepare conatct object's HTML
-function contactHtmlFromObject(contact){
-  console.log( contact );
-  var html = '';
-  html += '<li class="list-group-item contact">';
-    html += '<div>';
-      html += '<p class="lead">'+contact.name+'</p>';
-      html += '<p>'+contact.email+'</p>';
-      html += '<p><small title="'+contact.location.zip+'">'+contact.location.city+', '+contact.location.state+'</small></p>';
-    html += '</div>';
-  html += '</li>';
-  return html;
-}

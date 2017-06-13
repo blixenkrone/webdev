@@ -8,7 +8,7 @@
     <!-- JQUERY LOAD FØR ALT ANDET-->
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <!-- SIGNIFLY JS LOAD -->
-    <script src="signifly.js"></script>
+    <script src="bootstrap.js"></script>
     <!-- FIREBASE LOAD -->
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     <!-- JQUERY LOAD -->
@@ -47,9 +47,11 @@
             <li><a href="signifly.html"><i class="fa fa-home" aria-hidden="true"></i> home </a></li>
             <li><a href="signifly.html"><i class="fa fa-info" aria-hidden="true"></i> about </a></li>
             <li><a href="signifly.html#footer"><i class="fa fa-vcard" aria-hidden="true"></i> contact </a></li>
+            <li><a href="teams.html"><i class="fa fa-user-plus" aria-hidden="true"></i> create team </a></li>
+
             <li class="dropdown">
             <!-- Home dropdown -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users" aria-hidden="true"></i> teams <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users" aria-hidden="true"></i> my teams <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="teams.html">Team name 1</a></li>
                 <li role="separator" class="divider"></li>
@@ -76,7 +78,7 @@
         <div class="container">
           <div id="jumbotron-header">
 
-            <h1>Collaboration</h1>
+            <h1>Team Collaboration</h1>
             <p>
               Four dollar toast hexagon next level bespoke. La croix intelligentsia literally flannel kitsch. Tousled fingerstache intelligentsia poke seitan. Venmo deep v beard, tilde mixtape banjo farm-to-table marfa viral. Taxidermy biodiesel roof party chillwave, kickstarter occupy polaroid readymade. Keffiyeh seitan shaman, prism YOLO ethical drinking vinegar tbh vape enamel pin narwhal chia street art. Shabby chic meggings af pitchfork, freegan four loko DIY distillery skateboard squid fingerstache fanny pack.
             </p>
@@ -87,22 +89,24 @@
     </div>
 
 
-
+    <!-- CAROUSEL -->
     <div class="container">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 
+      </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <img src="pic1.png" alt="...">
             <div class="carousel-caption">
-              ...
+              <h3>What?</h3>
+              <p>Digitale brugeroplevelser</p>
             </div>
           </div>
 
@@ -110,20 +114,26 @@
           <div class="item">
             <img src="pic1.png" alt="...">
             <div class="carousel-caption">
-              <h3>Se nu her</h3>
-              <p>Se så</p>
+              <h3>How?</h3>
+              <p>II stedet for at lave forstyrende og irriterende reklamer skaber vi digitale brugeroplevelser der inspirerer, hjælper og gør livet bedre for mennesker.</p>
             </div>
           </div>
 
           <div class="item">
             <img src="pic1.png" alt="...">
             <div class="carousel-caption">
-              <h3>Se nu her</h3>
-              <p>Se så</p>
+              <h3>Why?</h3>
+              <p>Vi tror på at verden bliver et bedre sted uden reklamer. Vi mener at fremtidens brands skal hjælpe deres kunder i stedet for at forstyrre dem.</p>
             </div>
           </div>
 
-
+          <div class="item">
+            <img src="pic1.png" alt="...">
+            <div class="carousel-caption">
+              <h3>Who?</h3>
+              <p>Ambitiøse brands og organisationer.</p>
+            </div>
+          </div>
 
     </div>
   </div>
@@ -147,6 +157,9 @@
           </div>
         </div>
 
+
+
+
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -155,16 +168,18 @@
                 <h4 class="modal-title" id="exampleModalLabel">Ask us a question</h4>
               </div>
               <div class="modal-body">
-                <form>
+
+                <form action="signifly.php" method="post">
                   <div class="form-group">
                     <label for="recipient-name" class="control-label">Your e-mail:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                    <input type="text" class="form-control" id="recipient-name" name="userEmail"required>
                   </div>
                   <div class="form-group">
                     <label for="message-text" class="control-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                    <textarea class="form-control" id="message-text" name="userMessage"></textarea>
                   </div>
                 </form>
+
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
